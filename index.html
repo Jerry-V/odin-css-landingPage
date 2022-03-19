@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <title>Landing Page</title>
         <link rel="stylesheet" href="style.css">
+        <!--enabiling use of 'Roboto' font-->
+        <!-- https://fonts.google.com/specimen/Roboto#standard-styles -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="header">
@@ -17,11 +22,9 @@
         <div class="content">
             <div class="section-1">
                 <div class="left">
-                    <h2>This website is awesome</h2>
-                    <p>
-                        This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast
-                    </p>
-                    <button>Sign Up</button>    
+                    <div class="primary-text">This website is awesome</div>
+                    <div class="secondary-text">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</div>
+                    <button class="button-1">Sign Up</button>    
                 </div>
                 <div class="right">
                     <img src="" alt="Image Placeholder">
@@ -34,36 +37,37 @@
                     <ul>
                         <li>
                             <img src="" alt="Box 1">
-                            <p>this is some subtext under an illustration or image</p>
+                            <div>this is some subtext under an illustration or image</div>
                         </li>
                         <li>
                             <img src="" alt="Box 2">
-                            <p>this is some subtext under an illustration or image</p>
+                            <div>this is some subtext under an illustration or image</div>
                         </li>
                         <li>
                             <img src="" alt="Box 3">
-                            <p>this is some subtext under an illustration or image</p>
+                            <div>this is some subtext under an illustration or image</div>
                         </li>
                         <li>
                             <img src="" alt="Box 4">
-                            <p>this is some subtext under an illustration or image</p>
+                            <div>this is some subtext under an illustration or image</div>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div class="section-3">
-                <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who know? All I know is that it looks nice.</p>
-                <li>-Thor, God of Thuner</li>
+                <div class="quote-text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who know? All I know is that it looks nice.</div>
+                <div class="quote-source">-Thor, God of Thuner</div>
             </div>
-
             <div class="section-4">
-                <div class="left">
-                    <li>Call to action!</li>
-                    <li>Sign up for our product by clicking that button right over there!</li>
-                </div>
-                <div class="right">
-                    <button>Sign up</button>
+                <div class="box">
+                    <div class="left">
+                        <div class="top">Call to action!</div>
+                        <div class="bottom">Sign up for our product by clicking that button right over there!</div>
+                    </div>
+                    <div class="right">
+                        <button>Sign up</button>
+                    </div>    
                 </div>
             </div>
         </div>

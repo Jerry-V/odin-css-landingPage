@@ -1,21 +1,40 @@
 body{
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
 }
 
-.header, .section-1, .section-2, .section-3, .section-4, .footer{
-    padding: 0 50px 0 50px;
+/* there must be a better way to stretch background colors with alignment */
+.header, 
+.section-1, 
+.section-2, 
+.section-3, 
+.section-4, 
+.footer{
+    padding: 0 10% 0 10%;
+}
+
+.header, .section-1, .footer{
+    background-color: #1f2937;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(208, 208, 186);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header .logo{
+    font-size: 24px;
+    color: #f9faf8;
 }
 
 .header ul, a{
+    font-size: 18px;
+    color: #e5e7eb;
     margin: 0;
     padding: 0;
     display: flex;
@@ -32,11 +51,24 @@ body{
 }
 
 .section-1{
+    font-size: 18px;
+    color: #e5e7eb;
     flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(232, 194, 200);
+
+}
+
+.section-1 .left .primary-text{
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8; 
+}
+
+.button-1{
+    color: white;
+    background-color: #3882f6;
 }
 
 .section-2{
@@ -45,7 +77,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: beige;
+}
+
+.section-2 .title{
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1f2937;
 }
 
 .section-2 .box-image ul{
@@ -56,12 +93,19 @@ body{
 }
 
 .section-3{
+    background-color: #e5e7eb;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
+}
+
+.section-3 .quote-text{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
 }
 
 .section-4{
@@ -69,10 +113,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: azure;
+}
+
+.section-4 .box{
+    background-color: #3882f6;
+    color: white;
 }
 
 .footer{
+    color: white;
     text-align: center;
-    background-color: rgb(171, 205, 235);
+    padding: 25px 0 25px 0;
 }
