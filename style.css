@@ -5,10 +5,14 @@ body{
     margin: 0;
 }
 
+.header, .section-1, .section-2, .section-3, .section-4, .footer{
+    padding: 0 50px 0 50px;
+}
+
 .header{
     display: flex;
     justify-content: space-between;
-
+    background-color: rgb(208, 208, 186);
 }
 
 .header ul, a{
@@ -70,4 +74,5 @@ body{
 
 .footer{
     text-align: center;
+    background-color: rgb(171, 205, 235);
 }
